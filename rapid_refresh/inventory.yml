@@ -1,0 +1,12 @@
+---
+all:
+  children:
+    app1:
+      hosts:
+        server1:
+        server2:
+    app2:
+      hosts:
+        server3:
+        server4:
+...
