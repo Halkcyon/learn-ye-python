@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "parse-args",
+      "path": "./parse_args",
+    },
+  ],
+  "settings": {
+    "python.linting.mypyEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+  }
+}
