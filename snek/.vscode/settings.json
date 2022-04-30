@@ -1,0 +1,9 @@
+{
+  "[python]": {
+    "diffEditor.codeLens": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true
+  },
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true
+}
