@@ -13,6 +13,11 @@ Implemented:
 * setting up game surface
 
 TODO:
-* implement collision detection
-* implement game over / collision counter
-* implement game timer
+* ✔ implement collision detection
+* ✔ implement game over / collision counter
+* ✔ implement game timer
+
+* more cars / faster cars (slow down game timer advancement)
+* add background
+* add sounds
+* add fonts
