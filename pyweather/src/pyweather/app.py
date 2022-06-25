@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from pydantic import BaseModel
 
 app = FastAPI()
@@ -11,6 +11,27 @@ class Message(BaseModel):
 @app.get("/", response_model=Message)
 def index():
     return Message(message="Hello, world!")
+
+
+@app.post("/")
+def post_accept(body):
+    print(body)
+
+    return body
+
+
+@app.get("/debug-headers")
+def print_headers(req: Request):
+    return req.headers
+
+
+class Age(BaseModel):
+    age: int
+
+
+@app.post("/debug-body")
+async def print_body(age: Age):
+    return age
 
 
 @app.get("/{name}", response_model=Message)
